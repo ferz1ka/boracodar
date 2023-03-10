@@ -1,0 +1,318 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292738;
+  font-size: 1.6rem;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+#app {
+  display: grid;
+  place-content: initial;
+  column-gap: 3.2rem;
+  row-gap: 5.9rem;
+}
+
+#top {
+  height: 24rem;
+  display: flex;
+  gap: 2rem;
+}
+
+#bottom {
+  height: 314px;
+  display: flex;
+}
+
+.card {
+  padding: 2.9rem 4.8rem;
+  color: white;
+  background: #363447;
+  box-shadow: .3rem .4rem 2.6rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.6rem;
+}
+
+.nps,
+.sales,
+.goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  justify-content: space-between;
+  line-height: 160%;
+}
+
+.sales {
+  --sales-percentage: 70;
+}
+
+.goal {
+  --goal-percentage: 30;
+}
+
+.nps .top,
+.sales .top,
+.goal .top,
+.weekly-sales .top {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.nps .middle {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  gap: 1.6rem;
+
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #81FBB8;
+}
+
+.sales .middle,
+.goal .middle {
+  position: relative;
+  display: block;
+  height: 19.7rem;
+  width: 19.7rem;
+}
+
+.nps .bottom {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.sales .bottom,
+.goal .bottom {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.sales .bottom .item,
+.goal .bottom .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.sales .bottom .item:first-child::before,
+.goal .bottom .item:first-child::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  background: #4A4556;
+  border-radius: 999px;
+}
+
+.sales .bottom .item:last-child::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  background: linear-gradient(121.94deg, #CE9FFC 15.98%, #7367F0 82.85%);
+  border-radius: 999px;
+}
+
+.goal .bottom .item:last-child::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  background: linear-gradient(121.94deg, #DF9780 15.98%, #A66DE9 82.85%);
+  border-radius: 999px;
+}
+
+.weekly-sales .bottom {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.weekly-sales .bottom .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.weekly-sales .bottom .left .item span {
+  font-size: 1.4rem;
+}
+
+.weekly-sales .bottom .left .item p {
+  margin-top: 0.8rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.weekly-sales .bottom .right {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  height: 18.6rem;
+}
+
+.weekly-sales .bottom .right .divider {
+  position: absolute;
+  top: calc(50% - 1.5px);
+  left: 0;
+
+  height: 3px;
+  width: 100%;
+  background: #4A4556;
+  border-radius: 999px;
+}
+
+.weekly-sales .bottom .right .item {
+  --size: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.weekly-sales .bottom .right .item span {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.weekly-sales .bottom .right .item .bar {
+  height: var(--size);
+  width: 1.5rem;
+  background: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
+  border-radius: 999px;
+  animation: size 1s ease-in-out;
+}
+
+.sales .middle .content,
+.goal .middle .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sales .middle .content h3,
+.goal .middle .content h3 {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+.sales .middle .content p,
+.goal .middle .content p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.sales svg,
+.goal svg {
+  height: 19.7rem;
+  width: 19.7rem;
+  transform: rotate(-90deg);
+}
+
+.sales svg circle,
+.goal svg circle {
+  stroke-dasharray: 618;
+  stroke-dashoffset: 618;
+  stroke-width: 33;
+  fill: none;
+}
+
+.sales svg circle:nth-child(1),
+.goal svg circle:nth-child(1) {
+  stroke-dasharray: 0;
+}
+
+.sales svg circle:nth-child(2) {
+  stroke-dashoffset: calc(618 - (618 * var(--sales-percentage))/100);
+  stroke-linecap: round;
+  animation: progress 1s ease-in-out;
+}
+
+.goal svg circle:nth-child(2) {
+  stroke-dashoffset: calc(618 - (618 * var(--goal-percentage))/100);
+  stroke-linecap: round;
+  animation: progress 1s ease-in-out;
+}
+
+@keyframes size {
+  0% {
+    height: 0;
+  }
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 618;
+    stroke-dashoffset: 618;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  html {
+    height: 100vh;
+  }
+
+  body {
+    align-items: center;
+  }
+
+  #app {
+    display: grid;
+    place-content: center;
+    place-items: initial;
+    grid-template-columns: 29.6rem 35.1rem 40.9rem;
+    column-gap: 3.2rem;
+    row-gap: 5.9rem;
+  }
+
+  #top {
+    height: 24rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  #bottom {
+    height: 314px;
+    display: flex;
+  }
+
+  .card:nth-child(4) {
+    grid-column: 1/4;
+  }
+
+  .weekly-sales .bottom {
+    flex-direction: row;
+  }
+
+}
