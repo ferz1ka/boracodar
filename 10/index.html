@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="temperature-now">
+    <div class="top">
+      <img src="./assets/pin.svg" alt="location pin icon" />
+      <span>Rio do Sul, SC</span>
+    </div>
+    <div class="middle">
+      <div class="temp-container">
+        <strong class="temp-number">18</strong>
+        <div class="info-container">
+          <span class="max-temp">22º</span>
+          <span class="min-temp">16º</span>
+        </div>
+      </div>
+      <span class="temp-unit">ºC</span>
+    </div>
+    <div class="bottom">
+      <div class="info">
+        <img src="./assets/wind.svg" alt="wind icon" />
+        <div class="container">
+          <p>Vento</p>
+          <strong>17</strong>
+          <span>km/h</span>
+        </div>
+      </div>
+      <div class="info">
+        <img src="./assets/humidity.svg" alt="humidity icon" />
+        <div class="container">
+          <p>Umidade</p>
+          <strong>31</strong>
+          <span>%</span>
+        </div>
+      </div>
+      <div class="info">
+        <img src="./assets/rain.svg" alt="rainy cloud icon" />
+        <div class="container">
+          <p>Chuva</p>
+          <strong>10</strong>
+          <span>mm</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="air-quality">
+    <div class="top">
+      <img src="./assets/leaf.svg" alt="leaf icon">
+      <span>Qualidade do ar</span>
+    </div>
+    <div class="middle">
+      <strong>BOA</strong>
+      <span>21</span>
+    </div>
+    <div class="bottom">
+      <div class="info">
+        <strong>12.9</strong>
+        <span>PM2.5</span>
+      </div>
+      <div class="info">
+        <strong>12.9</strong>
+        <span>PM10</span>
+      </div>
+      <div class="info">
+        <strong>2.1</strong>
+        <span>SO₂</span>
+      </div>
+      <div class="info">
+        <strong>1.4</strong>
+        <span>NO₂</span>
+      </div>
+      <div class="info">
+        <strong>21.2</strong>
+        <span>O₃</span>
+      </div>
+      <div class="info">
+        <strong>0.7</strong>
+        <span>CO</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sun-time">
+    <div class="top">
+      <img src="./assets/sun-time.svg" alt="sun icon">
+      <span>Horário do sol</span>
+    </div>
+
+    <div class="middle">
+      <div class="sun-chart" style="--pos:20">
+        <img src="./assets/sun-chart.svg" alt="">
+        <div class="chart-fill"></div>
+        <div class="chart-cut"></div>
+        <span>16:01</span>
+      </div>
+    </div>
+    <div class="start-end">
+      <span>06:12</span>
+      <span>18:32</span>
+    </div>
+  </section>
+
+  <section class="week-weather">
+    <div class="day">
+      <span>Amanhã</span>
+      <img src="./assets/weather.svg" alt="">
+      <div class="info-container">
+        <span class="max-temp">22º</span>
+        <span class="min-temp">16º</span>
+      </div>
+    </div>
+    <div class="day">
+      <span>Sexta-feira</span>
+      <img src="./assets/sun.svg" alt="">
+      <div class="info-container">
+        <span class="max-temp">28º</span>
+        <span class="min-temp">20º</span>
+      </div>
+    </div>
+    <div class="day">
+      <span>Sábado</span>
+      <img src="./assets/rain-light.svg" alt="">
+      <div class="info-container">
+        <span class="max-temp">25º</span>
+        <span class="min-temp">21º</span>
+      </div>
+    </div>
+    <div class="day">
+      <span>Domingo</span>
+      <img src="./assets/rain-heavy.svg" alt="">
+      <div class="info-container">
+        <span class="max-temp">20º</span>
+        <span class="min-temp">14º</span>
+      </div>
+    </div>
+    <div class="day">
+      <span>Segunda-feira</span>
+      <img src="./assets/mid-sun.svg" alt="">
+      <div class="info-container">
+        <span class="max-temp">24º</span>
+        <span class="min-temp">18º</span>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
