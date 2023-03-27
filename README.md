@@ -26,12 +26,8 @@
 ### Desafio 06
 #### Passport Ticket
 <div style="display:flex">
-  <div style="flex:1">
-    <img width="100%" src="06/1.png">
-  </div>
-  <div style="flex:1">
-    <img width="100%" src="06/2.png">
-  </div>
+  <img width="50%" src="06/1.png">
+  <img width="50%" src="06/2.png">
 </div>
 
 ### Desafio 07
