@@ -15,12 +15,8 @@
 ### Desafio 04
 #### Chat
 <div style="display:flex;">
-  <div style="width:100%;">
-    <img width="20%" style="object-fit:cover;" src="04/1.png">
-  </div>
-  <div style="flex:1;">
-    <img width="20%" style="object-fit:cover;" src="04/2.png">
-  </div>
+  <img width="20%" style="object-fit:cover;" src="04/1.png">
+  <img width="20%" style="object-fit:cover;" src="04/2.png">
 </div>
 
 ### Desafio 05
