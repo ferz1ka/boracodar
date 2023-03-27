@@ -15,7 +15,7 @@
 ### Desafio 04
 #### Chat
 <div>
-  <img width="25.23%" src="04/1.png">
+  <img width="25.22%" src="04/1.png">
   <img width="74.33%" src="04/2.png">
 </div>
 
