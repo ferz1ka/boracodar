@@ -15,7 +15,7 @@
 ### Desafio 04
 #### Chat
 <div>
-  <img width="25%" src="04/1.png">
+  <img width="25.1%" src="04/1.png">
   <img width="74%" src="04/2.png">
 </div>
 
@@ -25,8 +25,10 @@
 
 ### Desafio 06
 #### Passport Ticket
-<img width="20%" src="06/1.png">
-<img width="70%" src="06/2.png">
+<div>
+  <img width="25.1%" src="06/1.png">
+  <img width="74%" src="06/2.png">
+</div>
 
 ### Desafio 07
 #### Portal do Carnaval
