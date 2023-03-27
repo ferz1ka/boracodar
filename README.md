@@ -14,7 +14,7 @@
 
 ### Desafio 04
 #### Chat
-<div style="display: flex;height: 1260px;">
+<div height="1260" style="display: flex;">
   <img width="100%" style="object-fit: contain;" src="04/1.png">
   <img width="100%" style="object-fit: contain;" src="04/2.png">
 </div>
