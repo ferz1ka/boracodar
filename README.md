@@ -25,10 +25,14 @@
 
 ### Desafio 06
 #### Passport Ticket
-<p>
-<img width="25%" src="06/1.png">
-<img width="75%" src="06/2.png">
-</p>
+<div style="display:flex">
+  <div style="flex:1;padding-right:10px;">
+    <img src="06/1.png">
+  </div>
+  <div style="flex:1;padding-left:10px;">
+    <img width="100%" src="06/2.png">
+  </div>
+</div>
 
 ### Desafio 07
 #### Portal do Carnaval
