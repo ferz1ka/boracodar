@@ -26,7 +26,7 @@
 ### Desafio 06
 #### Passport Ticket
 <div>
-  <img width="22.5%" src="06/1.png">
+  <img width="22.3%" src="06/1.png">
   <img width="76%" src="06/2.png">
 </div>
 
