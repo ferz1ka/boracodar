@@ -1,8 +1,7 @@
 # #BORACODAR
 
-### Desafio 01
-#### Music Player
 <img width="100%" src="01/1.png">
+## Desafio 01 - Music Player
 
 ### Desafio 02
 #### Product Card
