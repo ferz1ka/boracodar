@@ -15,9 +15,9 @@
 ### Desafio 04
 #### Chat
 <div align="center">
-  <div style="display: flex; align-items: flex-start;">
-    <img style="object-fit: contain;" src="04/1.png">
-    <img style="object-fit: contain;" src="04/2.png">
+  <div style="display: flex;">
+    <img width="100%" height="100%" style="object-fit: contain;" src="04/1.png">
+    <img width="100%" height="100%" style="object-fit: contain;" src="04/2.png">
   </div>
 </div>
 
