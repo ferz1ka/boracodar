@@ -16,10 +16,10 @@
 #### Chat
 <div style="display:flex;justify-content:center;align-items:center;">
   <div style="width:20%;">
-    <img width="100%" style="object-fit:cover;" src="04/1.png">
+    <img width="20%" style="object-fit:cover;" src="04/1.png">
   </div>
-  <div style="flex:1">
-    <img width="100%" style="object-fit:cover;" src="04/2.png">
+  <div style="flex:1;">
+    <img width="20%" style="object-fit:cover;" src="04/2.png">
   </div>
 </div>
 
