@@ -16,7 +16,7 @@
 #### Chat
 <div>
   <img width="25.2%" src="04/1.png">
-  <img width="74.35%" src="04/2.png">
+  <img width="74.36%" src="04/2.png">
 </div>
 
 ### Desafio 05
@@ -26,8 +26,8 @@
 ### Desafio 06
 #### Passport Ticket
 <div>
-  <img width="25.1%" src="06/1.png">
-  <img width="74%" src="06/2.png">
+  <img width="22%" src="06/1.png">
+  <img width="76%" src="06/2.png">
 </div>
 
 ### Desafio 07
