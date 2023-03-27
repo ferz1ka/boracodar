@@ -14,12 +14,12 @@
 
 ### Desafio 04
 #### Chat
-<table>
-  <tr>
-    <td valign="top"><img width="20%" src="04/1.png"></td>
-    <td valign="top"><img width="70%" src="04/2.png"></td>
-  </tr>
-</table>
+<div align="center">
+  <div style="display: flex; align-items: flex-start;">
+    <img width="20%" src="04/1.png">
+    <img width="70%" src="04/2.png">
+  </div>
+</div>
 
 ### Desafio 05
 #### Calculator
