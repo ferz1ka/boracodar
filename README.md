@@ -2,7 +2,9 @@
 
 ### Desafio 01
 #### Music Player
-<img width="100%" src="01/1.png">
+<div style="border-radius:20px">
+  <img width="100%" src="01/1.png">
+</div>
 
 ### Desafio 02
 #### Product Card
@@ -26,8 +28,8 @@
 ### Desafio 06
 #### Passport Ticket
 <div style="display:flex">
-  <img width="50%" src="06/1.png">
-  <img width="50%" src="06/2.png">
+  <img width="45%" src="06/1.png">
+  <img width="45%" src="06/2.png">
 </div>
 
 ### Desafio 07
