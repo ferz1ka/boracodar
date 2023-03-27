@@ -26,11 +26,11 @@
 ### Desafio 06
 #### Passport Ticket
 <div style="display:flex">
-  <div style="flex:1;padding-right:10px;">
-    <img height="100" src="06/1.png">
+  <div style="flex:1">
+    <img width="100%" src="06/1.png">
   </div>
-  <div style="flex:1;padding-left:10px;">
-    <img height="100" src="06/2.png">
+  <div style="flex:1">
+    <img width="100%" src="06/2.png">
   </div>
 </div>
 
