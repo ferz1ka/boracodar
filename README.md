@@ -2,9 +2,7 @@
 
 ### Desafio 01
 #### Music Player
-<div style="border-radius:80px">
-  <img width="100%" src="01/1.png">
-</div>
+<img width="100%" src="01/1.png">
 
 ### Desafio 02
 #### Product Card
@@ -16,10 +14,8 @@
 
 ### Desafio 04
 #### Chat
-<p>
-<img width="25%" src="04/1.png">
-<img width="75%" src="04/2.png">
-</p>
+<img align="left" height="800" src="04/1.png">
+<img align="right" width="75%" src="04/2.png">
 
 ### Desafio 05
 #### Calculator
@@ -27,10 +23,8 @@
 
 ### Desafio 06
 #### Passport Ticket
-<div style="display:flex">
-  <img height="1624" src="06/1.png">
-  <img width="50%" src="06/2.png">
-</div>
+<img align="left" width="50%" src="06/1.png">
+<img align="right" width="50%" src="06/2.png">
 
 ### Desafio 07
 #### Portal do Carnaval
