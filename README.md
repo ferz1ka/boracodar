@@ -14,8 +14,8 @@
 
 ### Desafio 04
 #### Chat
-<img width="20%" style="height:1620px" src="04/1.png">
-<img width="70%" style="height:1620px" src="04/2.png">
+<img width="20%" style="object-fit:cover;" src="04/1.png">
+<img width="70%" style="object-fit:cover;" src="04/2.png">
 
 ### Desafio 05
 #### Calculator
