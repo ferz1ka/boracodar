@@ -16,7 +16,7 @@
 #### Chat
 <div>
   <img width="25.3%" src="04/1.png">
-  <img width="74.2%" src="04/2.png">
+  <img width="74.5%" src="04/2.png">
 </div>
 
 ### Desafio 05
