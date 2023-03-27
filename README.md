@@ -16,8 +16,8 @@
 #### Chat
 <div align="center">
   <div style="display: flex;">
-    <img width="100%" height="100%" style="object-fit: contain;" src="04/1.png">
-    <img width="100%" height="100%" style="object-fit: contain;" src="04/2.png">
+    <img height="100%" style="object-fit: contain;" src="04/1.png">
+    <img width="100%" style="object-fit: contain;" src="04/2.png">
   </div>
 </div>
 
