@@ -1,41 +1,31 @@
 # #BORACODAR
 
-### Desafio 01
-#### Music Player
+## Desafio 01 - Music Player
 <img width="100%" src="01/1.png">
 
-### Desafio 02
-#### Product Card
+## Desafio 02 -Product Card
 <img width="100%" src="02/1.png">
 
-### Desafio 03
-#### Buttons & Cursors
+## Desafio 03 - Buttons & Cursors
 <img width="100%" src="03/1.png">
 
-### Desafio 04
-#### Chat
+## Desafio 04 - Chat
 <img width="100%" src="04/1.png">
 
-### Desafio 05
-#### Calculator
+## Desafio 05 - Calculator
 <img width="100%" src="05/1.png">
 
-### Desafio 06
-#### Passport Ticket
+## Desafio 06 - Passport Ticket
 <img width="100%" src="06/1.png">
 
-### Desafio 07
-#### Portal do Carnaval
+## Desafio 07 - Portal do Carnaval
 <img width="100%" src="07/1.png">
 
-### Desafio 08
-#### Dashboard
+## Desafio 08 - Dashboard
 <img width="100%" src="08/1.png">
 
-### Desafio 09
-#### Currency Converter
+## Desafio 09 - Currency Converter
 <img width="100%" src="09/1.png">
 
-### Desafio 10
-#### Forecast Dashboard
+## Desafio 10 - Forecast Dashboard
 <img width="100%" src="10/1.png">
