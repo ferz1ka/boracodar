@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+
+    <header>
+      <h1>Acesse a plataforma</h1>
+      <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
+    </header>
+
+    <form id="form" onsubmit="event.preventDefault(); handleSubmit();">
+      <div class="email-input-wrapper">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" placeholder="Digite seu e-mail" onkeydown="handleEmailChange()">
+        <span id="email-error" class="error hide">Digite um e-mail válido!</span>
+      </div>
+
+      <div class="password-label-wrapper">
+        <label for="password">Senha</label>
+        <a href="#">Esqueceu a senha?</a>
+      </div>
+      <div class="password-input-wrapper">
+        <input id="password" type="password" placeholder="Digite sua senha" onkeydown="handlePasswordChange()">
+        <img onclick="togglePassword()" class="password-icon" src="./assets/eye.svg" alt="">
+        <img onclick="togglePassword()" class="password-icon hide" src="./assets/eye-off.svg" alt="">
+        <span id="password-error" class="error hide">Digite uma senha válida!</span>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <footer>
+      <span>Ainda não tem uma conta? <a href="#">Inscreva-se</a></span>
+    </footer>
+
+  </main>
+
+  <aside></aside>
+
+
+  <script>
+
+    const passwordIcons = document.querySelectorAll(".password-icon")
+    const emailInput = document.getElementById("email")
+    const passwordInput = document.getElementById("password")
+    const emailErrorLabel = document.getElementById("email-error")
+    const passwordErrorLabel = document.getElementById("password-error")
+
+
+    function togglePassword() {
+      passwordIcons.forEach((element) => {
+        element.classList.toggle("hide")
+      })
+
+      const passwordType = passwordInput.getAttribute("type") === "password" ? "text" : "password"
+      passwordInput.setAttribute("type", passwordType)
+    }
+
+    function handleEmailChange() {
+      console.log(1)
+      emailInput.classList.remove("error")
+      emailErrorLabel.classList.add("hide")
+    }
+
+    function handlePasswordChange() {
+      console.log(2)
+      passwordInput.classList.remove("error")
+      passwordErrorLabel.classList.add("hide")
+    }
+
+    function handleSubmit() {
+      const email = emailInput.value
+      const password = passwordInput.value
+
+      let hasError = false
+
+      if (!email || !email.includes("@")) {
+        emailInput.classList.add("error")
+        emailErrorLabel.classList.remove("hide")
+        hasError = true
+      }
+
+      if (!password) {
+        passwordInput.classList.add("error")
+        passwordErrorLabel.classList.remove("hide")
+        hasError = true
+      }
+
+      if (hasError) return
+
+      emailInput.classList.remove("error")
+      emailErrorLabel.classList.add("hide")
+      passwordInput.classList.remove("error")
+      passwordErrorLabel.classList.add("hide")
+    }
+
+  </script>
+</body>
+
+</html>
