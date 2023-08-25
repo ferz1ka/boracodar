@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-image: url(assets/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: brightness(0.5);
+
+  display: grid;
+  place-content: center;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+#app {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+    'aside header'
+    'aside main'
+    'aside footer';
+
+  animation: startup 400ms 500ms backwards;
+}
+
+@keyframes startup {
+  from {
+    scale: 2;
+    opacity: 0;
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  padding: 0.75rem;
+  height: fit-content;
+  align-self: center;
+  overflow: hidden;
+
+  border-radius: 5rem;
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05), 0px 1px 1px 0px rgba(255, 255, 255, 0.30) inset, 0px -1px 1px 0px rgba(255, 255, 255, 0.10) inset;
+  backdrop-filter: blur(16px);
+}
+
+.side-menu ion-icon {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 5rem;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.side-menu ion-icon:hover {
+  background: rgba(255, 255, 255, 0.20);
+  opacity: 1;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  padding: 0.5rem 0.75rem;
+  width: fit-content;
+  justify-self: center;
+  overflow: hidden;
+
+  border-radius: 5rem;
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05), 0px 1px 1px 0px rgba(255, 255, 255, 0.30) inset, 0px -1px 1px 0px rgba(255, 255, 255, 0.10) inset;
+  backdrop-filter: blur(16px);
+}
+
+.nav-bar .actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.nav-bar .actions ion-icon {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 5rem;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.nav-bar .actions ion-icon:hover {
+  background: rgba(255, 255, 255, 0.20);
+  opacity: 1;
+}
+
+.nav-bar .address-bar {
+  display: flex;
+  width: 27.5rem;
+  padding: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 5rem;
+  background: rgba(0, 0, 0, 0.10);
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.10) inset, 0px 1px 0px 0px rgba(0, 0, 0, 0.20) inset;
+
+  color: rgba(255, 255, 255, 0.80);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+.nav-bar .address-bar ion-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.nav-bar .address-bar .domain {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-bar .address-bar .domain ion-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-top: -2px;
+}
+
+.screen {
+  width: 60rem;
+  height: 33.75rem;
+
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.screen::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255 255 255 / 0.3));
+  border-radius: inherit;
+  backdrop-filter: blur(16px);
+  z-index: -1;
+}
+
+.screen #video {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.screen #ambient-light {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  scale: 1.2;
+
+  filter: blur(100px) opacity(0.5) saturate(300%);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0);
+}
+
+.interaction {
+  justify-self: center;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.interaction .elipse {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.60);
+  backdrop-filter: blur(2px);
+}
+
+.interaction .rectangle {
+  width: 5.375rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.60);
+  backdrop-filter: blur(2px);
+}
